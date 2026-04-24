@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>長周期地震再現装置 | 株式会社安理技研</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">安理技研</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">ご挨拶</a></li>
+                <li><a href="index.html#products">製品情報</a></li>
+                <li><a href="index.html#company">会社情報</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="index.html" class="btn-recruit">求人(緊急募集)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section product-detail-hero">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="label">Product Detail</span>
+                    <h1>長周期地震再現装置 (デモ機)</h1>
+                </div>
+                <div class="glass detail-box fade-in">
+                    <p class="lead">気象庁公開の加速度データに基づき、長周期地震の揺れを精密に再現します。</p>
+                    <p>地震の指標である「震度」や「マグニチュード」とは別に、近年注目されている「長周期地震階級（1〜4）」に対応。特に階級4では「固定していない家具の大半が移動し、転倒するものもある」ほどの激しい揺れをシミュレート可能です。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section dark">
+            <div class="container">
+                <div class="video-container glass fade-in" style="padding: 2rem; text-align: center;">
+                    <h2 style="margin-bottom: 2rem;">動作デモンストレーション</h2>
+                    <video controls width="100%" style="max-width: 1000px; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                        <source src="SuiLongEarthquake-Move.mp4" type="video/mp4">
+                        お使いのブラウザは動画タグをサポートしていません。
+                    </video>
+                    <p style="margin-top: 1.5rem; color: var(--text-muted);">※デモ機のため、安全を考慮し実際のデータより振幅を縮小して動作させています。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="grid-2">
+                    <div class="detail-content fade-in">
+                        <h2>技術的な取り組み</h2>
+                        <p>気象庁がWebで公開している加速度データより、精密な変位データを作成して制御を行っています。</p>
+                        <ul class="feature-list">
+                            <li><strong>階級4の再現:</strong> 変位の移動量が1mを超えるような大規模な揺れにも理論上対応。</li>
+                            <li><strong>柔軟なカスタマイズ:</strong> 最大振幅変位、速度などの情報より、より細かな試験条件の設定が可能です。</li>
+                            <li><strong>転倒試験への活用:</strong> 什器や機器の転倒試験、長周期振動計の動作確認等に最適です。</li>
+                        </ul>
+                    </div>
+                    <div class="detail-content fade-in">
+                        <h2>今後の展望</h2>
+                        <p>現在はデモ機ですが、実際に十分な評価を行うためには、可動部が左右2m、上下1m程度のストロークを持つ構成が望ましいと考えています。</p>
+                        <div class="highlight-box">
+                            <p>可動部の構成を整えれば、実データによる再現は弊社技術をもってすれば特に難しくありません。お客様のニーズに合わせた実機の設計・開発も承ります。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section dark">
+            <div class="container">
+                <div class="contact-box glass">
+                    <h2>長周期地震再現装置についてのお問い合わせ</h2>
+                    <p>試験のご相談や実機開発のご依頼など、お気軽にお問い合わせください。</p>
+                    <a href="contact.html" class="btn-primary">お問い合わせはこちら</a>
+                    <a href="index.html#products" class="btn-secondary" style="margin-left: 1rem;">製品一覧に戻る</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; 1986-2026 Anri-Giken Allrights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

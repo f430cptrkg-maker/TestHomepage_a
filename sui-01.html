@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUI-01 汎用制御ボード | 株式会社安理技研</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">安理技研</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">ご挨拶</a></li>
+                <li><a href="index.html#products">製品情報</a></li>
+                <li><a href="company.html">会社概要</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="index.html" class="btn-recruit">求人(緊急募集)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section product-detail-hero">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="label">Product Detail</span>
+                    <h1>汎用制御ボード SUI-01</h1>
+                </div>
+                <div class="glass detail-box fade-in">
+                    <p class="lead">ハードウェアはARM CPUに計測用のAD、制御用のDAをつけた汎用制御ボードです。</p>
+                    <p>数十μsecの等間隔でセンサー等の信号をAD変換し、必要な計算処理を行い、DAにて制御すべき電圧を出力するだけのボードです。</p>
+                    <div class="highlight-box">
+                        <p><strong>最大のメリットは… 高速で高機能、かつ安価な制御装置を構成できる！</strong></p>
+                    </div>
+                </div>
+
+                <!-- Development Background -->
+                <div class="glass development-history fade-in" style="margin-top: 4rem; padding: 3rem; border: 1px solid var(--primary); border-radius: 12px; position: relative;">
+                    <h2 style="position: absolute; top: -15px; left: 30px; background: var(--bg-dark); padding: 0 15px; font-size: 1.2rem; color: var(--primary);">SUI-01 開発の経緯</h2>
+                    <div class="history-content">
+                        <p style="margin-bottom: 1.5rem;">過去に頂いたご依頼の中に、市販の汎用AD/DAでは対応できないような案件が幾つかありました。その都度、専用のハードウェア、ファームウェアから開発してきましたが多大なコストがかかり、コストの都合で断念せざるを得ない案件もあり悔しい思いをしていました。</p>
+                        <p style="margin-bottom: 1.5rem;">そこで、汎用制御ボードの開発を決意し、構想と開発の末に誕生したのがSUI-01です。</p>
+                        <p>SUI-01によって、これまで難しかった「複雑な制御を特に高速に行う」ことが可能になった上に開発にかかる全体的なコストのカットも実現しました。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section dark">
+            <div class="container">
+                <div class="grid-2">
+                    <div class="detail-content fade-in">
+                        <h2>主な特長</h2>
+                        <ul class="feature-list">
+                            <li><strong>高速サンプリング:</strong> <p>FPGAによる多チャネルのAD/DAにより、50μsecでの同期サンプリングが可能。（倍速でのオーバーサンプリング処理等も可能）</p></li>
+                            <li><strong>入出力仕様:</strong> <p>AD 16ch (18bit) // DA 1ch (18bit) + 8ch (16bit)</p></li>
+                            <li><strong>拡張性:</strong> <p>最大16ボードでの同期運転が可能</p>
+                                <p>AD Max.256Ch, DA Max.16Ch[18bit] + 128Ch[16bit]</p>
+                            </li>
+                            <li><strong>高機能演算:</strong> <p>高速な浮動小数点ユニット実装のメインCPU(M4)と大容量RAMにより、高度な制御が可能。</p></li>
+                            <li><strong>高速通信:</strong> <p>メインCPU(M4)の他、通信専用CPU(M0)によりパソコンとの4ch高速通信を実現。</p></li>
+                            <li><strong>カスタマイズ:</strong> <p>実績のある基本ルーチン群をベースに、ユーザー様の要望に合わせた制御をファームで実現可能。</p></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="detail-content fade-in">
+                        <h2>準備されている基本ルーチン</h2>
+                        <ul class="routine-list">
+                            <li>フィルタ (IIR, FIRによるローパス、バンドパス等)</li>
+                            <li>PID制御 (完全微分、不完全微分サポート)</li>
+                            <li>信号発生 (指数関数、基本波形、重畳波形、任意波形)</li>
+                            <li>各種演算 (P-Pサーチ、基本波計算、RMS計算、位相計算)</li>
+                            <li>6座標変換</li>
+                            <li>タイミング信号出力</li>
+                            <li>I/O処理 (高速計測・監視による異常停止等)</li>
+                            <li>上位PC等との連携 (制御指示、状態監視、データ授受)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Processing Speed Section -->
+        <section class="process-section">
+            <div class="container">
+                <div class="process-header fade-in">
+                    <h2>SUI-01の処理速度</h2>
+                    <p class="process-description">パソコンで制御装置からデータを吸い上げ計算し、制御装置に新しいデータを送るというフェーズをなくすことによって、リアルタイム性の強化された制御を可能としています。</p>
+                </div>
+                <div class="diagram-wrapper fade-in">
+                    <img src="suiprocess.png" alt="SUI-01 処理速度比較図">
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="glass application-box fade-in">
+                    <h2>活用事例</h2>
+                    <div class="app-grid">
+                        <div class="app-item">
+                            <h3>耐久加振</h3>
+                            <p>特性が大きく変わる試験でも、計測データを評価しゲイン等の係数を動的に変化させることで、迅速かつ安定した制御を可能にします。</p>
+                        </div>
+                        <div class="app-item">
+                            <h3>性能試験加振</h3>
+                            <p>単なる波形発生ではなく、AD, DIOの状態により任意の波形を発生させるファンクションジェネレータとして機能します。</p>
+                        </div>
+                        <div class="app-item">
+                            <h3>モーションコントローラ</h3>
+                            <p>計算のための各種パラメータをファームに送り込み、ファームウェア内で座標変換計算を行い制御します。SUI-01を2枚以上使うことにより、多軸制御も可能となります。（最大16台）</p>
+                        </div>
+                        <div class="app-item">
+                            <h3>位置制御</h3>
+                            <p>電動、油圧アクチュエータのPID処理を含む高度な制御が可能です。</p>
+                        </div>
+                    </div>
+                    <div class="summary-note">
+                        <p>「シーケンサーと汎用AD/DA＋パソコン」では目的が達成できず、特別なハードウェア開発を必要としていたケースでも、SUI-01とファームウェアの組み合わせにより、ハードウェア設計開発フェーズを不要にします。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section dark">
+            <div class="container">
+                <div class="contact-box glass">
+                    <h2>SUI-01 についてのお問い合わせ</h2>
+                    <p>仕様の詳細やカスタマイズ、導入のご相談など、お気軽にお問い合わせください。</p>
+                    <a href="contact.html" class="btn-primary">お問い合わせはこちら</a>
+                    <a href="index.html#products" class="btn-secondary" style="margin-left: 1rem;">製品一覧に戻る</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; 1986-2026 Anri-Giken Allrights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
