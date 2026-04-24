@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>求人（緊急募集） | 株式会社安理技研</title>
+    <meta name="description" content="安理技研ではプログラミングが好きな人を緊急募集中です。C#を使ったアプリケーション開発など、10年、20年と長く活躍していただける方を募集しています。">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@300;600&display=swap"
+        rel="stylesheet">
+    <style>
+        .recruit-hero {
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            background-image: url('recruit_hero_1777002564241.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .job-card {
+            margin-bottom: 4rem;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            position: relative;
+        }
+
+        .step-item {
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .step-num {
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: var(--bg-dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin: 0 auto 1.5rem;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .benefit-item {
+            padding: 1.5rem;
+            border-left: 4px solid var(--primary);
+            background: var(--bg-card);
+        }
+
+        .application-info {
+            margin-top: 4rem;
+        }
+
+        .contact-details {
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .recruit-hero {
+                height: 40vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">安理技研</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#about">ご挨拶</a></li>
+                <li><a href="index.html#products">製品情報</a></li>
+                <li><a href="company.html">会社概要</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="recruit.html" class="btn-recruit">求人(緊急募集)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="recruit-hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="label fade-in">Recruit</span>
+                <h1 class="fade-in">求人（緊急募集）</h1>
+                <p class="hero-subtitle fade-in">プログラミングが好きな人、募集中！！</p>
+            </div>
+        </section>
+
+        <!-- Intro Section -->
+        <section class="section">
+            <div class="container">
+                <div class="glass detail-box">
+                    <p class="lead">2023年に欠員が出るため、共に歩んでいただける仲間を緊急募集しています。</p>
+                    <p>安理技研は、10年、20年のスパンで腰を据えて活躍していただける方を求めています。未経験でもポテンシャルがあれば大歓迎です。プログラマー適性試験であなたの才能を試してみませんか？</p>
+
+                    <div class="benefit-grid">
+                        <div class="benefit-item">
+                            <h3>ワークライフバランス</h3>
+                            <p>残業はほとんどありません。プライベートや家庭を大切にしながら働けます。</p>
+                        </div>
+                        <div class="benefit-item">
+                            <h3>育児支援</h3>
+                            <p>勤務時間などは十分に考慮します。子育て中の方も安心して働ける環境です。</p>
+                        </div>
+                        <div class="benefit-item">
+                            <h3>多様な業務</h3>
+                            <p>C#アプリ開発を中心に、HP更新などの幅広い業務に携わることができます。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Job Details -->
+        <section class="section dark">
+            <div class="container">
+                <div class="section-header">
+                    <span class="label">Requirements</span>
+                    <h2>募集要項</h2>
+                </div>
+
+                <div class="job-card glass">
+                    <table class="info-table">
+                        <tr>
+                            <th>職種</th>
+                            <td>プログラマー</td>
+                        </tr>
+                        <tr>
+                            <th>仕事内容</th>
+                            <td>
+                                主にC＃を使ったパソコンアプリケーションの開発。<br>
+                                机上でのプログラミングが中心となります。また、弊社HPの更新作業などもお任せします。
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>応募条件</th>
+                            <td>
+                                プログラミングができることが前提ですが、未経験の方も「プログラマー適性試験」の結果次第でチャレンジ可能です。
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>勤務地</th>
+                            <td>埼玉県所沢市喜多町4-6（本社）<br>※近郊にお住まいの方を歓迎します。</td>
+                        </tr>
+                        <tr>
+                            <th>備考</th>
+                            <td>
+                                管理者候補（総合職）も別途募集中です。こちらは残業や出張が発生する場合があります。
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selection Process -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="label">Process</span>
+                    <h2>採用までの流れ</h2>
+                </div>
+                <div class="process-steps">
+                    <div class="step-item glass">
+                        <div class="step-num">01</div>
+                        <h3>面接・適性試験</h3>
+                        <p>まずは面接とプログラマー適性試験を行います。知識がなくても高得点を取る人がいます。</p>
+                    </div>
+                    <div class="step-item glass">
+                        <div class="step-num">02</div>
+                        <h3>パート体験</h3>
+                        <p>実際にパートとして仕事を体験していただきます。業務遂行能力や関係性を確認します。</p>
+                    </div>
+                    <div class="step-item glass">
+                        <div class="step-num">03</div>
+                        <h3>正社員採用</h3>
+                        <p>良好な関係が築け、業務が遂行可能であれば、正社員として正式に採用となります。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Section -->
+        <section class="section dark">
+            <div class="container">
+                <div class="contact-box glass">
+                    <h2>応募方法</h2>
+                    <p>ハローワーク経由、もしくは履歴書を添付の上、メールまたは郵送にてご応募ください。<br>
+                        折り返しのご連絡（メールまたは電話）のため、連絡方法を必ず明記してください。</p>
+                    
+                    <div class="contact-details">
+                        <p><strong>担当：宮路（みやじ）</strong></p>
+                        <p>電話：042-920-1885</p>
+                        <p>E-mail：<a href="mailto:miyaji@anri-net.co.jp" style="color: var(--primary);">miyaji@anri-net.co.jp</a></p>
+                        <p>住所：〒359-1113 埼玉県所沢市喜多町4-6</p>
+                    </div>
+                    
+                    <div style="margin-top: 3rem;">
+                        <a href="contact.html" class="btn-primary">お問い合わせフォームへ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; 1986-2026 Anri-Giken Allrights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
